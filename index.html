@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instagram</title>
+	<link rel="stylesheet" type="text/css" href="C:\Users\hp\Documents\programming\projects\InstagramClone.css">
+
+	<!-- instagram logo -->
+	<link rel="icon" type="image/x-icon" href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OHk_8a.png">
+
+	<!-- Font awesome icons -->
+	<link
+	rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+	integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+	/>
+
+	<!-- Poppins font by google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+	href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet"
+	/>
+</head>
+<body>
+	<div class="container">
+		<img id="main" src="https://static.cdninstagram.com/images/instagram/xig/homepage/phones/home-phones-2x.png?__makehaste_cache_breaker=73SVAexZgBW" alt="Some Unknown Error Occured">
+		<img id="subMain" src="" alt="Unable to display img">
+		
+		<div class="form">
+			<img id=instagramIcon src="C:\Users\hp\Documents\programming\images\instgramIconBlack.png" alt="Instagram">
+			<br><br><br><br>
+			<input type="text" id="username" placeholder="Phone number, Username, or Email">
+			<input type="password" id="Password" placeholder="Password">
+			<input type="button" id="loginbutton" Value="Log in">
+			<hr class="hrline"><span class="or">OR</span>
+			<a id="loginFacebook" href="#">
+				<i class="fa-brands fa-lg fa-facebook"></i>
+				Log in with Facebook
+			</a>
+			<a class="forgetPassword" href="#">Forget Password?</a>
+		</div>
+
+		<div class="createNewAccount">
+			<a id="NewAccountButton" href="">Create new account</a>
+		</div>
+
+		<div class="getApp">
+			<span class="getAppText">Get the App</span>
+			<a class="anchorApp" href="#"><img class="googlePlay" src="https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png" alt="googlePlay"></a>
+			<a class="anchorApp" href="#"><img class="MicrosoftStore" src="https://static.cdninstagram.com/rsrc.php/v3/yu/r/EHY6QnZYdNX.png" alt="MicrosoftStore"></a>
+		</div>
+
+		<div class="footer">
+			<div>
+				<a href="" class="footerText">Meta</a>
+				<a href="" class="footerText">About</a>
+				<a href="" class="footerText">Blog</a>
+				<a href="" class="footerText">Jobs</a>
+				<a href="" class="footerText">API</a>
+				<a href="" class="footerText">Privacy</a>
+				<a href="" class="footerText">Terms</a>
+				<a href="" class="footerText">Locations</a>
+				<a href="" class="footerText">Instagram Lite</a>
+				<a href="" class="footerText">Thread</a>
+				<a href="" class="footerText">Contact</a>
+				<a href="" class="footerText">Uploading & Non-Users</a>
+				<a href="" class="footerText">Meta Verified</a>
+			</div>
+			<div>
+				<a class="footerText footerText2" href="#">English    <i class="fa-solid fa-angle-down fa-sm"></i></a>
+				<a class="footerText footerText3"><i class="fa-regular fa-copyright fa-sm"></i>    2024 Instagram from Meta</a></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			let images=['C:/Users/hp/Documents/programming/images/screenshot1.png','C:/Users/hp/Documents/programming/images/screenshot2.png','C:/Users/hp/Documents/programming/images/screenshot3.png','C:/Users/hp/Documents/programming/images/screenshot4.png']
+
+			let currentIndex = 0;
+			function showNextImage() {
+				const imgElement = document.getElementById('subMain');
+				imgElement.src = images[currentIndex];
+            currentIndex = (currentIndex + 1) % images.length;
+        }
+        setInterval(showNextImage, 3500);
+        showNextImage();
+    </script>
+</body>
+</html>

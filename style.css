@@ -1,0 +1,224 @@
+body,html{
+	margin:0;
+	margin-top:2vh;
+	padding: 0;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	font-family: "Poppins";
+}
+.container{
+	display: flex;
+	width: 850px;
+	height: 700px;
+	position: relative;
+}
+#main{
+	position: absolute;
+	margin-top:8px;
+	width: 56%;
+	height: 91%;
+	z-index: 1;
+}
+#subMain{
+	position: absolute;
+	right: 434.5px;
+	top:35px;
+	height: 78%;
+	z-index: 2;
+	width: 30%;
+	animation-name: subMainTransition;
+	animation-duration: 3.5s;
+	animation-iteration-count: infinite;
+}
+@keyframes subMainTransition{
+	0%{
+		filter: blur(6px);
+	}
+	8%{
+		filter: blur(4px);
+	}
+	16%{
+		filter: blur(2px);
+	}
+	24%{
+		filter:none;
+	}
+	84%{
+		filter: none;
+	}
+	92%{
+		filter: blur(2px);
+	}
+	100%{
+		filter: blur(4px);
+	}
+}
+/*root tag for container*/
+:root{
+	--height:400px;
+	--width: 345px;
+	--border:1px solid #d3d3d3;
+}
+.form{
+	position: relative;
+	height:var(--height);
+	width: var(--width);
+	border: var(--border);
+	top: 20px;
+	left: 460px;
+}
+.createNewAccount{
+	position: relative;
+	width: var(--width);
+	height: 65px;
+	border: var(--border);
+	top: 435px;
+	left:113px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#instagramIcon{
+	object-position: center; center;
+	object-fit: contain;	
+	height: 60px;
+	width: 180px;
+	position: inherit;
+	left: 77px;
+	top: 50px;
+}
+#username,#Password,#loginbutton{
+	margin: 3px 32px;
+	padding-left:10px ;
+	width: 270px;
+	height: 30px;
+	font-size: 12px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius:3px ;
+	border: 1px solid lightgrey;
+	outline: none;
+}
+#username:focus,#Password:focus{
+	border-color: grey;
+}
+#loginbutton{
+	margin-top: 12px;
+	padding: 3px 0 3px 3px;
+	width: 284px;
+	border-top-left-radius: 9px ;
+	border-top-right-radius:  9px;
+	border-bottom-right-radius:  9px;
+	border-bottom-left-radius:  9px;
+	background-color: #4cb5f9;
+	color: white;
+	outline: none;
+	border: none;
+	font-size: 14px;
+}
+.hrline{
+	margin:25px 32px 25px 35px;
+	border: none;
+	height: 1px;
+	background-color:#d3d3d3;
+}
+.or{
+	background-color: white;
+	color: grey;
+	height: 20px;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	top: 280px;
+	left: 44%;
+}
+#loginFacebook{
+	position: absolute;
+	left: 75px;
+	text-decoration: none;
+	color: #385185;
+	padding-top: 10px;
+}	
+.facebookText{
+	padding-left: 10px;
+}
+.forgetPassword{
+	font-size: 12px;
+	position: absolute;
+	top: 365px;
+	left: 35%;
+	text-decoration: none;
+	color: black;
+}
+#NewAccountButton{
+	color: RGB(0, 149, 246);
+	font-size: 14px;
+	font-weight: 500;
+	text-decoration: none;	
+}
+.getApp{
+	position: absolute;
+	top:510px;
+	left: 460px;
+	width: var(--width);
+	height: 80px;
+}
+.getAppText{
+	display: flex;
+	justify-content: center;
+}
+.googlePlay,.MicrosoftStore{
+	display:inline-block;
+	width: 42%;
+	height: 52%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: none;
+}
+.googlePlay{
+	padding:5px 0 0 25px;
+}
+.footer{
+	height: 50px;
+	width: 100%;
+	position: absolute;
+	top: 620px;
+	text-align: center;
+	z-index: 10;
+}
+.footerText{
+	font-size: 11px;
+	display: inline;
+	padding: 0 3px;
+	text-decoration: none;
+	color: grey;
+}
+.footerText:hover{
+	text-decoration: underline;
+}
+.footerEnd{
+	position: relative;
+	width: 90px;
+	height: 18px;
+	border: 1px solid red;
+}
+.footerEndText{
+	font-size: 13px;
+
+}
+.footerText2{
+	font-size: 12px;
+	padding: 0 10px;
+}
+.footerText3{
+	font-size: 11px;
+	cursor: text;
+}
+.footerText3:hover{
+	text-decoration: none;
+}
