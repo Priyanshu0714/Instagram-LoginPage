@@ -21,9 +21,9 @@ This project is a clone of the Instagram login page, built using HTML, CSS, and 
 
 ## Demo
 
-![Instagram Login Page Clone](https://github.com/Priyanshu0714/Instagram-LoginPage/blob/main/homepage.png)
+![Instagram Login Page Clone](https://github.com/Priyanshu0714/Instagram-LoginPage/blob/main/homepage%20view.png)
 
-![Instagram Login Page video](https://github.com/Priyanshu0714/Instagram-LoginPage/assets/153934157/5610fcd3-f2d0-482e-8279-6a376647e641)
+![Instagram Login Page video can be downloaded from the repository]
 
 ## Installation
 
