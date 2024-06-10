@@ -8,7 +8,6 @@ This project is a clone of the Instagram login page, built using HTML, CSS, and 
 - [Demo](#demo)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Folder Structure](#folder-structure)
 - [Technologies Used](#technologies-used)
 - [Contact](#contact)
 
